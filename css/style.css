@@ -6,6 +6,7 @@ body {
     background: #dddddd;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    
 }
 
 h1,
@@ -1275,22 +1276,18 @@ a:focus {
     align-items: center;
     height: 60px;
     background: #04acbc ;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+   
 }
 
 .blog .blog-title h3 {
     margin: 0;
-    padding: 0 15px 0 25px;
-    width: calc(100% - 60px);
+    padding: 0 15px 0 10px;
+    width: 83%;
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    text-align: center;
+   
 }
 
 .blog .blog-title a.btn {
@@ -1347,6 +1344,8 @@ a:focus {
 .blog .blog-text {
     padding: 10px 25px 25px 25px;
     background: #f3f6ff;
+    height: 120px;
+    overflow-y: auto;
 }
 
 .blog .blog-text p {
