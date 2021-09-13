@@ -1,4 +1,4 @@
-(function ($) {
+$(document).ready(function ($) {
     "use strict";
     
     // Initiate the wowjs
@@ -138,6 +138,6 @@
        
     });
     
-})(jQuery);
+});
 
 
