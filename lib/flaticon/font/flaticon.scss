@@ -1,5 +1,7 @@
+$flaticon-font: "flaticon";
+
 @font-face {
-    font-family: "flaticon";
+    font-family: $flaticon-font;
     src: url("./flaticon.ttf?939936db18bb9826eac6437eafb408d3") format("truetype"),
 url("./flaticon.woff?939936db18bb9826eac6437eafb408d3") format("woff"),
 url("./flaticon.woff2?939936db18bb9826eac6437eafb408d3") format("woff2"),
@@ -18,36 +20,50 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+$flaticon-map: (
+    "timetable": "\f101",
+    "customer-service": "\f102",
+    "email": "\f103",
+    "architect": "\f104",
+    "herramientas": "\f105",
+    "graduado": "\f106",
+    "teaching": "\f107",
+    "book": "\f108",
+    "standard": "\f109",
+    "handshake": "\f10a",
+    "maps-and-location": "\f10b",
+);
+
 .flaticon-timetable:before {
-    content: "\f101";
+    content: map-get($flaticon-map, "timetable");
 }
 .flaticon-customer-service:before {
-    content: "\f102";
+    content: map-get($flaticon-map, "customer-service");
 }
 .flaticon-email:before {
-    content: "\f103";
+    content: map-get($flaticon-map, "email");
 }
 .flaticon-architect:before {
-    content: "\f104";
+    content: map-get($flaticon-map, "architect");
 }
 .flaticon-herramientas:before {
-    content: "\f105";
+    content: map-get($flaticon-map, "herramientas");
 }
 .flaticon-graduado:before {
-    content: "\f106";
+    content: map-get($flaticon-map, "graduado");
 }
 .flaticon-teaching:before {
-    content: "\f107";
+    content: map-get($flaticon-map, "teaching");
 }
 .flaticon-book:before {
-    content: "\f108";
+    content: map-get($flaticon-map, "book");
 }
 .flaticon-standard:before {
-    content: "\f109";
+    content: map-get($flaticon-map, "standard");
 }
 .flaticon-handshake:before {
-    content: "\f10a";
+    content: map-get($flaticon-map, "handshake");
 }
 .flaticon-maps-and-location:before {
-    content: "\f10b";
+    content: map-get($flaticon-map, "maps-and-location");
 }

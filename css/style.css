@@ -22,7 +22,9 @@ a {
     color: #666666;
     transition: .3s;
 }
-
+.a{
+    color: #fff;
+}
 a:hover,
 a:active,
 a:focus {
